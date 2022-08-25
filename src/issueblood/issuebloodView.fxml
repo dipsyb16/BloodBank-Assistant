@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="issueblood.issuebloodViewController">
+   <children>
+      <BorderPane layoutX="-4.0" prefHeight="40.0" prefWidth="608.0" style="-fx-background-color: #841b1b;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="58.0" prefHeight="27.0" prefWidth="176.0" text="Issue Blood Unit" textFill="#841b1b">
+         <font>
+            <Font name="Microsoft JhengHei" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="200.0" layoutY="93.0" prefWidth="200.0" />
+      <Label alignment="CENTER" layoutX="47.0" layoutY="134.0" text="Needy Name" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="47.0" layoutY="168.0" />
+      <Label alignment="CENTER" layoutX="47.0" layoutY="220.0" text="Hospital" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txthospital" layoutX="48.0" layoutY="255.0" />
+      <Label alignment="CENTER" layoutX="47.0" layoutY="318.0" text="Blood Group" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobgrp" layoutX="47.0" layoutY="350.0" prefWidth="150.0" />
+      <Label alignment="CENTER" layoutX="47.0" layoutY="414.0" text="Date of Issue" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpdate" layoutX="145.0" layoutY="412.0" />
+      <Label alignment="CENTER" layoutX="380.0" layoutY="134.0" text="Mobile no" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobile" layoutX="380.0" layoutY="168.0" />
+      <Label alignment="CENTER" layoutX="380.0" layoutY="220.0" text="Purpose/Reason" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtreason" layoutX="380.0" layoutY="255.0" />
+      <Label alignment="CENTER" layoutX="380.0" layoutY="318.0" text="No. of Units" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtunits" layoutX="380.0" layoutY="350.0" />
+      <Button layoutX="272.0" layoutY="507.0" mnemonicParsing="false" onAction="#doupdate" text="Update" />
+      <Separator layoutX="-1.0" layoutY="474.0" prefHeight="3.0" prefWidth="604.0" />
+   </children>
+</AnchorPane>

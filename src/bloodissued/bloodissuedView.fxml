@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodissued.bloodissuedViewController">
+   <children>
+      <BorderPane prefHeight="40.0" prefWidth="614.0" style="-fx-background-color: #841b1b;" />
+      <Label layoutX="223.0" layoutY="67.0" text="Blood Issued Data" textFill="#841b1b">
+         <font>
+            <Font name="Book Antiqua Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="207.0" layoutY="91.0" prefWidth="200.0" />
+      <Label layoutX="33.0" layoutY="119.0" text="Date Of Issue">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpdate" layoutX="136.0" layoutY="119.0" />
+      <Label layoutX="33.0" layoutY="159.0" text="Blood Group">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobgrp" layoutX="136.0" layoutY="159.0" prefWidth="150.0" />
+      <Button layoutX="519.0" layoutY="119.0" mnemonicParsing="false" onAction="#doshow" text="List" />
+      <Button layoutX="489.0" layoutY="159.0" mnemonicParsing="false" onAction="#doexport" text="Export to Excel" />
+      <TableView fx:id="tvtable" layoutX="70.0" layoutY="223.0" prefHeight="342.0" prefWidth="482.0" />
+   </children>
+</AnchorPane>

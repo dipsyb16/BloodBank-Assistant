@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DonorMaster.DonorMasterViewController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="57.0" prefHeight="27.0" prefWidth="176.0" text="Donor Registeration" textFill="#841b1b">
+         <font>
+            <Font name="Microsoft JhengHei" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="171.0" layoutY="91.0" prefHeight="3.0" prefWidth="258.0" />
+      <Label alignment="CENTER" layoutX="48.0" layoutY="119.0" text="Mobile Number" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmobno" layoutX="48.0" layoutY="148.0" />
+      <Button layoutX="212.0" layoutY="148.0" mnemonicParsing="false" onAction="#dofind" text="Find" />
+      <Label layoutX="48.0" layoutY="190.0" text="Name" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="48.0" layoutY="218.0" />
+      <Label layoutX="244.0" layoutY="192.0" text="Gender" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combogender" layoutX="244.0" layoutY="218.0" prefWidth="150.0" />
+      <ImageView fx:id="imgview" fitHeight="109.0" fitWidth="122.0" layoutX="449.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="484.0" layoutY="231.0" mnemonicParsing="false" onAction="#dobrowse" text="Browse" />
+      <Label layoutX="48.0" layoutY="270.0" text="Address" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtaddress" layoutX="49.0" layoutY="300.0" prefHeight="26.0" prefWidth="337.0" />
+      <Label layoutX="435.0" layoutY="270.0" text="City/Town" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcity" layoutX="435.0" layoutY="300.0" />
+      <Label layoutX="45.0" layoutY="348.0" text="Blood Group" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobgrp" layoutX="47.0" layoutY="376.0" prefWidth="150.0" />
+      <Label layoutX="232.0" layoutY="348.0" text="Age" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtage" layoutX="232.0" layoutY="376.0" />
+      <Label alignment="CENTER" layoutX="404.0" layoutY="348.0" text="Disease if any" textFill="#330404">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtdisease" layoutX="404.0" layoutY="376.0" />
+      <Separator layoutX="14.0" layoutY="427.0" prefHeight="3.0" prefWidth="570.0" />
+      <Button layoutX="65.0" layoutY="452.0" mnemonicParsing="false" onAction="#doclear" text="Clear" />
+      <Button layoutX="182.0" layoutY="452.0" mnemonicParsing="false" onAction="#doregister" text="Register" />
+      <Button layoutX="332.0" layoutY="452.0" mnemonicParsing="false" onAction="#doupdate" text="Update" />
+      <Button layoutX="476.0" layoutY="452.0" mnemonicParsing="false" onAction="#docancel" text="Delete" />
+      <Separator layoutX="15.0" layoutY="503.0" prefHeight="3.0" prefWidth="570.0" />
+      <BorderPane layoutX="-2.0" prefHeight="40.0" prefWidth="608.0" style="-fx-background-color: #841b1b;" />
+   </children>
+</AnchorPane>
